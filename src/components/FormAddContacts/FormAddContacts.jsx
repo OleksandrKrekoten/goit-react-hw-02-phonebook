@@ -1,4 +1,5 @@
-import { Formik, ErrorMessage,  } from 'formik';
+import { Formik, ErrorMessage, } from 'formik';
+// import { nanoid } from 'nanoid';
 import * as Yup from 'yup';
 import 'yup-phone';
 import { Form, Field, Button } from './FormAddContacts.styled';
@@ -6,6 +7,7 @@ const initialValues = {
   name: '',
   phoneNumber: '',
 };
+
 const validationSchema = Yup.object({
   name: Yup.string().required(),
   phoneNumber: Yup.string().phone('UA', true).required(),
@@ -13,6 +15,8 @@ const validationSchema = Yup.object({
 
 const handleSubmit = (values, actions) => {
   setTimeout(() => actions.setSubmitting(false), 800);
+  
+  
 };
 
 export const FormAddContacts = () => {

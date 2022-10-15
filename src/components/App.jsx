@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { FormAddContacts } from './FormAddContacts/FormAddContacts';
 import { ListContacts } from './ListContacts/ListContacts';
 import { Section } from './Section/Section';
-// import { nanoid } from 'nanoid';
+
 export class App extends Component {
   state = {
     contacts: [
